@@ -1,21 +1,21 @@
-DATABASE_PASSWORD:           # TODO! This needs to be a unique and good password!
-NC_DOMAIN: yourdomain.com          # TODO! Needs to be changed to the domain that you want to use for Nextcloud.
-NEXTCLOUD_PASSWORD:           # TODO! This is the password of the initially created Nextcloud admin with username admin.
-ONLYOFFICE_SECRET:           # TODO! This needs to be a unique and good password!
-RECORDING_SECRET:           # TODO! This needs to be a unique and good password!
-REDIS_PASSWORD:           # TODO! This needs to be a unique and good password!
-SIGNALING_SECRET:           # TODO! This needs to be a unique and good password!
-TALK_INTERNAL_SECRET:           # TODO! This needs to be a unique and good password!
-TIMEZONE: Europe/Berlin          # TODO! This is the timezone that your containers will use.
-TURN_SECRET:           # TODO! This needs to be a unique and good password!
+DATABASE_PASSWORD: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+NC_DOMAIN: slapbet-joplin.duckdns.org          # TODO! Needs to be changed to the domain that you want to use for Nextcloud.
+NEXTCLOUD_PASSWORD: akkoRmiv4n          # TODO! This is the password of the initially created Nextcloud admin with username admin.
+ONLYOFFICE_SECRET: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+RECORDING_SECRET: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+REDIS_PASSWORD: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+SIGNALING_SECRET: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+TALK_INTERNAL_SECRET: akkoRmiv4n          # TODO! This needs to be a unique and good password!
+TIMEZONE: Europe/London          # TODO! This is the timezone that your containers will use.
+TURN_SECRET: akkoRmiv4n          # TODO! This needs to be a unique and good password!
 
-CLAMAV_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-COLLABORA_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-FULLTEXTSEARCH_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-IMAGINARY_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+CLAMAV_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+COLLABORA_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+FULLTEXTSEARCH_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+IMAGINARY_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
 ONLYOFFICE_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-TALK_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-TALK_RECORDING_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+TALK_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
+TALK_RECORDING_ENABLED: "yes"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
 
 APACHE_MAX_SIZE: "10737418240"          # This needs to be an integer and in sync with NEXTCLOUD_UPLOAD_LIMIT
 APACHE_PORT: 443          # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else).
@@ -33,7 +33,7 @@ TALK_PORT: 3478          # This allows to adjust the port that the talk containe
 UPDATE_NEXTCLOUD_APPS: no          # When setting to yes (with quotes), it will automatically update all installed Nextcloud apps upon container startup on saturdays.
 NAMESPACE: default        # By changing this, you can adjust the namespace of the installation which allows to install multiple instances on one kubernetes cluster
 
-STORAGE_CLASS:        # By setting this, you can adjust the storage class for your volumes
+STORAGE_CLASS: longhorn       # By setting this, you can adjust the storage class for your volumes
 APACHE_STORAGE_SIZE: 1Gi       # You can change the size of the apache volume that default to 1Gi with this value
 CLAMAV_STORAGE_SIZE: 1Gi       # You can change the size of the clamav volume that default to 1Gi with this value
 DATABASE_STORAGE_SIZE: 1Gi       # You can change the size of the database volume that default to 1Gi with this value
